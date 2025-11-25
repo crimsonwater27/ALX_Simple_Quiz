@@ -14,10 +14,11 @@ function checkAnswer() {
         feedback.innerText = "Correct! Well done.";
         feedback.style.color = "green";
     } else {
-        feedback.innerText = "Incorrect. Try again!";
+        feedback.innerText = "That's incorrect. Try again!";
         feedback.style.color = "red";
     }
 }
 
 const submitButton = document.getElementById('submit-btn');
+
 submitButton.addEventListener('click', checkAnswer);
