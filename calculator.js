@@ -18,9 +18,9 @@ function divide(number1, number2) {
 }
 
 function getNumbers() {
-    const num1 = parseFloat(prompt("Enter the first number:"));
-    const num2 = parseFloat(prompt("Enter the second number:"));
-    return [num1, num2];
+    const num1 = parseFloat(document.getElementById('number1').value ||0;
+    const num2 = parseFloat(documemt.getElementById('number2').value ||0;
+    return {number1, number2 };
 }
 
 document.getElementById('add').addEventListener('click', function() {
@@ -45,4 +45,5 @@ document.getElementById('divide').addEventListener('click', function() {
     const {number1, number2} = getNumbers();
     const result = divide(number1, number2);
     document.getElementById('caculation-result').textContent = result;
+
 });
